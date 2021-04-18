@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>
+      Imersão Dev - Aula 01
+    </title>
+  </head>
+  <body id="body">
+   <div class="container">
+     <div class="row">
+       <div class="row">
+       <h1>Conversor Universal de Unidades</h1>
+       <label for="tpUnidade">Escolha uma unidade:</label>
+        <select id="tpUnidade" name="tpUnidade" onchange="mudarCampos();">
+			<option value="0" style="color:#ccc">selecione</option>
+			<option value="1">Moeda</option>
+          	<option value="3">Velocidade</option>
+          	<option value="2">Comprimento</option>
+		</select>
+         <div class="row row-2">
+      <div class="col col-sm-4">
+        <label>Quero converter:</label>
+        <br>
+        <input type="text" id="valorPConverter" placeholder="insira um valor...">
+      </div>
+      <div class="col col-sm-4" >
+        <p id="unidade_de"></p>
+      </div>
+      <div class="col col-sm-4">
+        <p id="unidade_para"></p>
+      </div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col">
+           <button class="btn" onclick="calcular()"> Converter </button>
+           <div class="resposta">
+             <br>
+             <b id="resposta"></b>
+           </div>
+         </div>
+         <b id="btn_secreto"></b>
+         <div class="row" id="div_secreto">
+           <div class="col col-sm-4" >
+              <p id="secreto_valor"></p>
+           </div>
+           <div class="col col-sm-4">
+              <p id="secreto_op"></p>
+           </div>
+           <div class="col col-sm-4">
+              <p id="secreto_converte"></p>
+           </div>
+         </div>
+         <div class="resposta">
+             <br>
+             <b id="resposta_secreta" style="color: #3a3a3a;"></b>
+           </div>
+       </div>
+     </div>
+   </div>
+  </body>
+</html>
